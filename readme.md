@@ -2,8 +2,6 @@
 
 > Add a given class to elements.
 
-*Supported in IE8+*
-
 
 ## Install
 
