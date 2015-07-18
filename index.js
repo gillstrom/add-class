@@ -4,9 +4,10 @@ var objType = require('obj-type');
 function add(el, str) {
 	if (el.classList) {
 		el.classList.add(str);
-	} else {
-		el.className += ' ' + str;
+		return;
 	}
+
+	el.className += ' ' + str;
 }
 
 module.exports = function (el, str) {
