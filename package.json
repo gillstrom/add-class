@@ -25,6 +25,7 @@
     "element"
   ],
   "dependencies": {
+    "array-union": "^1.0.1",
     "obj-type": "^1.0.0"
   }
 }
