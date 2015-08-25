@@ -1,6 +1,6 @@
 {
   "name": "add-class",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add a given class to elements.",
   "license": "MIT",
   "repository": "gillstrom/add-class",
