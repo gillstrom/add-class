@@ -1,12 +1,18 @@
 'use strict';
 var objType = require('obj-type');
+var arrayUnion = require('array-union');
 
 function add(el, str) {
 	if (el.classList) {
 		el.classList.add(str);
-	} else {
-		el.className += ' ' + str;
+		return;
 	}
+
+	var cn = el.className.split(' ').filter(function (x) {
+		return x !== '';
+	});
+
+	el.className = arrayUnion(cn, str.trim()).join(' ');
 }
 
 module.exports = function (el, str) {
